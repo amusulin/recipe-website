@@ -16,7 +16,7 @@
 
     <nav>
         <ul>
-            <a href="index.html"><li>Recipes</li></a>
+            <a href="index.html"><li>Home</li></a>
 
            <a href="Desserts.html"><li>Desserts</li></a>
            
@@ -30,11 +30,50 @@
     </nav>
 </header>
 
+<body>
+    <div class="feedback">
+    <title>Feedback Form</title>
+  
+        <h1 class="label">What Do You Suggest?</h1>
+    
+    <div class="form">
+        <form method="post" action="send_mail.php">
+    <p>
+    <label>Name
+    <input type="text" name="first_name" required>
+    </label> 
+    </p>
+    <p>
+        <label>Email 
+    <input type="email" name="email_address">
+    </label>
+    </p>
+    <p>
+        <label>Comments
+    <textarea name="comments" maxlength="2000"></textarea>
+    </label>
+    </p>
+    <p><button>Submit</button></p>
+    </form>
+    </div>
+    </div>
 
+</body>
 
 <footer>
-    Follow me on Instagram or Pinterest for more great recipe ideas! 
+
+    Follow me on <a href="https://instagram.com/femmepoetyk">Instagram</a> or <a href="https://pinterest.com/UniversalMe">Pinterest</a> for more great recipe ideas! 
+
 </footer>
 
 
 </html>
+
+
+    <!-- HTML Codes by Quackit.com
+    <style type="text/css">
+        textarea.html-text-box {background-color:#ffffff;background-image:url(http://);background-repeat:no-repeat;background-attachment:fixed;border-width:1;border-style:solid;border-color:#cccccc;font-family:Arial;font-size:14pt;color:#339966;}
+        input.html-text-box {background-color:#ffffff;font-family:Arial;font-size:14pt;color:#000000;}
+        </style>
+        <form method="post" action="http://"><textarea name="comments" cols="30" rows="5" class="html-text-box">What recipe should i try next?</textarea><br><input type="submit" value="Submit" class="html-text-box"><input type="reset" value="Reset" class="html-text-box"></form>
+     -->
