@@ -6,9 +6,11 @@
     <title>Let's Eat</title>
 
     <link rel="stylesheet" href="css/styles.css">
-    
-</head>
+    <!-- <link rel="prompts" href="js/prompts.jss"> -->
 
+
+</head>
+<body>
 <header>
     <div class="welcome">
         <h1 class="title">What Should I Make Next?</h1>
@@ -16,13 +18,13 @@
 
     <nav>
         <ul>
-            <a href="index.html"><li>Home</li></a>
+            <li><a href="index.html"></a>Home</li></a>
 
-           <a href="Desserts.html"><li>Desserts</li></a>
+           <li><a href="Desserts.html"></a>Desserts</li></a>
            
-           <a href="Drinks.html"><li>May I Offer You a Drink</li></a>
+           <li><a href="Drinks.html"></a>May I Offer You a Drink</li></a>
          
-           <a href="SuggestionsPage.html"><li>Suggestions</li></a>
+           <li><a href="SuggestionsPage.html"></a>Suggestions</li></a>
          
            <!-- <a href="URL"><li>Other</li></a> -->
     
@@ -30,14 +32,14 @@
     </nav>
 </header>
 
-<body>
+
     <div class="feedback">
     <title>Feedback Form</title>
   
         <h1 class="label">What Do You Suggest?</h1>
     
     <div class="form">
-        <form method="post" action="send_mail.php">
+        <form method="post">
     <p>
     <label>Name
     <input type="text" name="first_name" required>
@@ -53,8 +55,13 @@
     <textarea name="comments" maxlength="2000"></textarea>
     </label>
     </p>
-    <p><button>Submit</button></p>
+    <p><button onclick="myFunction()">Submit</button></p>
     </form>
+    <script>
+        function myFunction() {
+          alert("Thank you for your suggestion!");
+        }
+        </script>
     </div>
     </div>
 
