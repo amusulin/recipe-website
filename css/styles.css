@@ -118,10 +118,13 @@ aside {
         order: 2;
         width: 35%;
         margin-left: 15px;
+        animation: fadeIn ease 2s;
+        position: relative;
     }
     .page-cont {
         order: 1;
     }
+
 }
 
 nav {	
@@ -184,6 +187,18 @@ section {
     width: 63%;
     /* float: right; */
 }
+
+@keyframes fadeIn {
+    0% {
+        opacity:0;
+        left: 100px;
+        }
+    100% {
+        opacity:1;
+        left: 0;
+    }
+    }
+
 
 /* img {
     float: right;
