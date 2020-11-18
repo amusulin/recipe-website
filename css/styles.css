@@ -61,7 +61,7 @@ header {
 
 @media screen and (min-width: 600px) {
     .welcome {
-        height: 27vw;
+        height: 25vw;
     }
 }    
 
@@ -200,7 +200,5 @@ section {
     }
 
 
-/* img {
-    float: right;
-  } */
+
 
