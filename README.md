@@ -33,3 +33,6 @@ Github
     -- exceeds 5 commits with actual content change
 •	Naming your project
     -- named recipe-website (relevant as it is a recipe website)
+
+
+please disregard php ... i was working on it for email submission for suggestion page but do not have php on my computer and didnt get far enough into it to fully understand it.  plan to work on it once i learn a little more.
