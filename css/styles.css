@@ -18,6 +18,8 @@ header {
     }
 }
 
+/* //^--- media query to change from vertical to horizontal */
+
 .page-cont {
     width: 100%;
     order: 2;
@@ -37,6 +39,12 @@ header {
     text-align: center;
 }
 
+label {
+    display: block;
+}
+
+/* ^//so that suggestions are all centered in page instead of having context boxes in the same line as the label */
+
 .form {
     text-align: center;
 }
@@ -46,13 +54,11 @@ header {
 
 .welcome {
     background-image: url(../images/cookingbanner.jpg);
-    /* background-attachment: fixed; */
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
     height: 200px;
     background-position: center;
-    /* background-position-y: top; */
     text-align: center;
     display: flex;
     justify-content: center;
@@ -65,6 +71,8 @@ header {
     }
 }    
 
+/* //^-- media query to make it so that header banner adjusts to screen size and doesnt distort */
+
 .desserts .welcome {
     background-image: url(../images/desserts.jpg);
 }
@@ -73,7 +81,8 @@ header {
     background-image: url(../images/thebar.jpg);
 
 }
-        
+ 
+/* //^-- these two specified so that each page can have a different picture in header banner */
 
 html {
     /* height: 100%;
@@ -101,7 +110,6 @@ footer {
 
 aside {
   width: 100%;
-  height: 200px;
   padding-left: 15px;
   margin: 0 1.5%;
   float: right;
@@ -109,7 +117,6 @@ aside {
   background-color: lightgray;
   border-style: dashed;
   display: block;
-  /* position: relative; */
   order: 1;
 }
 
@@ -129,10 +136,7 @@ aside {
 
 nav {	
     width:100%;
-	/* height:50px; */
-	/* background-color: green; */
     color:white;
-    /* padding-top: 201px; */
     font-style: normal;
     padding-bottom: 10px;
         
@@ -158,12 +162,8 @@ nav ul {
 }	
 nav ul li {
     border-style: double;
-    /* width:20%;  */
 	line-height:50px;
-	/* display: inline-block; */
-	/* border-right:1px solid white; */
 	text-align:center;
-    /* float: left; */
     background-color: white;
     color: green;
     margin: 10px;
@@ -172,9 +172,14 @@ nav ul li {
 }
 	
 nav ul li:hover {
-    background-color:black;
-	color:white;
+    background-color:green;
 }
+
+a:hover {
+    color: white;
+}
+ /* //^-- changes color of text on hover for better visibility */
+
 
 body {
     background-color: rgb(158, 228, 158);
@@ -185,7 +190,6 @@ section {
     float: left;
     margin: 0 1.5%;
     width: 63%;
-    /* float: right; */
 }
 
 @keyframes fadeIn {
@@ -199,6 +203,6 @@ section {
     }
     }
 
-
+/* //^-- set for animation of aside (crawl in from right of page on desktop) */
 
 
